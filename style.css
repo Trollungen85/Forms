@@ -60,7 +60,7 @@ input[type="password"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 input[type="text"]:focus,
@@ -70,20 +70,23 @@ input[type="password"]:focus {
   outline: none;
 }
 
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
 .checkbox-group {
   display: flex;
   flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .checkbox-group label {
   display: flex;
   align-items: center;
-  margin: 20px;
-  font-size: 1rem;
-}
-
-.checkbox-group input {
-  margin-right: 10px;
+  margin: 10px 0;
+  font-size: 0.8rem;
 }
 
 button {
@@ -99,6 +102,10 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+button:focus {
+  outline: 3px solid #ffbf47;
 }
 
 small {
